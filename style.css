@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif; margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 69px;
+    cursor: pointer;
+}
+nav ul li a{
+    position: relative;
+    color: black;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+}
+nav ul li i{
+    padding: 12px;
+    color: #19c7b9;
+}
+.search{
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    border: 1px solid #19c7b9;
+    z-index: 1;
+}
+nav ul li a .search:hover{
+    background-color: white;
+}
+main {
+    width: auto;
+}
+.main-content{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+aside {
+ width: auto;
+ padding: 0 4rem;   
+}
+.search:focus{
+    border: 2px solid #19c7b9;
+    outline: none;
+    transition: 0.4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: white;
+}
+main{
+    margin: 35px 20px;
+    width: 22rem;
+}
+.my-profile{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;    border-radius: 10px;
+}
+.my-profile h1{
+    text-align: center;
+}
+.my-profile-img img{
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    border-radius: 100%;
+    width: 40%;
+    height: 40%;
+}
+.person-bio{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+}
+.name{
+    padding: 5px;
+}
+.name i{
+    font-size: 25px;
+    color: #19c7b9;
+}
+.name:hover{
+    background-color: #c4c6c6;
+    color: white;
+}
+.skill{
+    padding: 5px;
+}
+.skill i{
+    font-size: 25px;
+    color: #19c7b9;
+}
+.skill:hover{
+    background-color: #c4c6c6;
+    color: white;
+}
+.location{
+    padding: 5px;
+}
+.location i{
+    font-size: 25px;
+    color: #19c7b9;
+}
+.location:hover{
+    background-color: #c4c6c6;
+    color: white;
+}
+.birthday{
+    padding: 5px;
+}
+.birthday i{
+    font-size: 25px;
+    color: #19c7b9;
+}
+.birthday:hover{
+    background-color: #c4c6c6;
+    color: white;    
+}
+.messages{
+    margin: 35px 0px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+    border-radius: 10px;
+}
+.message{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+.message:hover{
+    background-color: #c4c6c6;
+    color: white;
+}
+.message i{
+    color: #19c7b9;
+}
+.interests{
+    margin: 35px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.interests h1{
+    text-align: center;
+    margin: -40px;
+    padding: 50px;
+}
+.interest{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: .6rem;
+}
+.interest p{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    background-color: #f1f1f1;
+    padding: .6rem;
+    border-radius: 10px;
+    margin: .4rem;
+}
+.fa-circle-xmark{
+    color: #19c7b9;
+    font-size: 21px;
+}
+.add-post{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+    width: 45vw;
+    border-radius: 10px;
+    margin: 35px;
+}
+.add-post h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+.add-post-inp{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    font-size: 20px;
+    width: 40vw;
+    height: 35px;
+    border-radius: 15px;
+    border: 1px solid #19c7b9;
+    margin: 20px 0px;
+}
+.add-post-inp:focus{
+    border: 2px solid #19c7b9;
+    outline: none;
+    transition: 0.4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: white;
+}
+.add-post-btn{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #19c7b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 40px 0px;
+    transition: .4s;
+}
+.add-post-btn:hover{
+    transition: .4s;
+    border: 1px solid #19c7b9;
+    background-color: white;
+    color: black;
+}
+.posted{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+    width: 45vw;
+    border-radius: 10px;
+    margin: 35px;
+}
+.posted-you{
+    display: flex;
+    align-items: center;
+}
+.posted-you h1{
+    margin: 2vh 0vh;
+}
+.posted-you img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    margin: 10px;
+    margin: 2vh 5vh;
+}
+.posted-you hr{
+    margin: 20px 0px;
+    width: 100%;
+}
+@media (max-width: 985px) {
+    body{
+        overflow-x: hidden;     
+    }
+    main{
+        width: 70vw;
+        margin: 35px 1vw;
+    }
+    .main-content{
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        left: 12%;
+        top: 50%;
+        margin: 0;
+    }
+    .posted-you img{
+        width: 10%;
+        height: 10%;
+    }
+}
+@media (max-width:800px) {
+    nav{
+        height: 20%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;      
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    nav ul li{
+        text-align: center;
+        display: inline-block;
+        line-height: 69px;
+        cursor: pointer;
+    }
+    nav ul li a{
+        position: relative;
+        color: black;
+        font-size: 18px;
+        padding: 5px 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
